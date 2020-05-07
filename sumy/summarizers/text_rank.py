@@ -67,6 +67,7 @@ class TextRankSummarizer(AbstractSummarizer):
         for i, words_i in enumerate(sentences_as_words):
             for j in range(i, sentences_count):
                 rating = self._rate_sentences_edge(words_i, sentences_as_words[j])
+                print(rating)
                 weights[i, j] = rating
                 weights[j, i] = rating
 

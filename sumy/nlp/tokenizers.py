@@ -9,7 +9,6 @@ import zipfile
 import nltk
 
 from .._compat import to_string, to_unicode, unicode
-from ..utils import normalize_language
 
 
 class DefaultWordTokenizer(object):

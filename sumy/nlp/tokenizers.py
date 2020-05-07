@@ -85,7 +85,7 @@ class Tokenizer(object):
     }
 
     def __init__(self, language):
-        language = normalize_language(language)
+        language = 'english'
         self._language = language
 
         tokenizer_language = self.LANGUAGE_ALIASES.get(language, language)
